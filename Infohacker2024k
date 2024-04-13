@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Infohacker</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Source Sans Pro">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <style>
+      html {
+      scroll-behavior: smooth;
+    }
+    h1,h2,h3,h4,h5,h6 {font-family: "Source Sans Pro"}
+    body {font-family: "Source Sans Pro"}
+
+    /* Estilos CSS para el contenedor */
+    .imagen-container {
+      position: relative;
+      display: inline-block;
+    }
+
+    /* Estilos CSS para los GIF animados */
+    .gif-animado {
+      position: relative;
+      top: 0;
+      left: 0;
+      display: none;
+    }
+
+    .imagen-container {
+     position: relative;
+     display: inline-block;*/
+     margin-right: 20px; /* Espacio entre las imágenes */
+    }
+
+    table, th, td {
+     border: 2px solid;
+     border-collapse: collapse;
+    }
+
+    html{
+     cursor: url(imagenes/11-removebg-preview.png), 
+     auto;
+    }
+    
+    a:hover{
+     cursor: url(imagenes/10-removebg-preview.png), auto;
+    }
+    
+  </style>
+</head>
+<body onload="ocultarGif" class="w3-black " style="margin-top:10px" onclick="PlayAudio()">
+
+<!-- Navigation bar with links -->
+<div class="w3-bar w3-black w3-text-cyan">
+  <img class="w3-left w3-image" src="https://imgur.com/uWkyDr6.jpg" alt="photo244" width="140" height="100">
+  <a href="#Contact" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-large w3-right" style="margin-top:10px;">CONTACT</a>
+  <a href="#Contenido" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-large w3-right" style="margin-top:10px;">TOPICS</a>
+  <a href="#Trainers" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-large w3-right" style="margin-top:10px;">TEAM</a>
+  <a href="#Home" class="w3-hide-small w3-bar-item w3-button w3-mobile w3-large w3-right" style="margin-top:10px;">HOME</a>
+  <a href="javascript:void(0)" class="w3-bar-item w3-button w3-right w3-hide-medium w3-hide-large" style="margin-top:10px;" onclick="myFunction()">&#9776;</a>
+</div>
+
+<div id="demo" class="w3-bar-block w3-orange w3-hide w3-hide-large w3-small">
+  <a href="#Home" class="w3-bar-item w3-button">HOME</a>
+  <a href="#Trainers" class="w3-bar-item w3-button">TEAM</a>
+  <a href="#Contenido" class="w3-bar-item w3-button">CONTENIDO</a>
+  <a href="#Contact" class="w3-bar-item w3-button">CONTACT</a>
+</div>
+
+<!-- w3-content defines a container for fixed size centered content, 
+and is wrapped around the whole page content, except for the footer in this example -->
+<div class="w3-content" style="max-width:1600px">
+
+  <!-- Image header -->
+  <header class="w3-display-container w3-wide" style="padding-bottom:32px;" id="Home">
+    <img class="w3-image" src="https://www.tesmanian.com/cdn/shop/articles/elon-musk-neuralink-1.jpg?v=1596337165&width=2048" alt="Photo by Jamie Street" width="1600" height="1060">
+    <div class="w3-display-left w3-padding-large">
+      <h1 class="w3-text-white">Neuralink</h1>
+      <h1 class="w3-xxxlarge w3-text-white w3-hide-small"><b>TELEPATHY: The brain chip</b></h1>
+      <h6><button class="w3-button w3-round w3-white w3-padding-large w3-large w3-hover-opacity-off"><a href="#Neuralink">MORE ABOUT</a></button></h6>
+    </div>
+  </header>
+
+  <div class="w3-cyan">
+    <marquee behavior="scroll" direction="left">Visita las redes sociales de nuestra institución @colegiolasallemargarita en Instagram</marquee>
+  </div>
+
+  <!-- Grid / Trainers section -->
+  <div class="w3-row-padding" id="Trainers" style="margin-left: 20px">
+    <div class="w3-center w3-padding-32">
+      <h2 class="w3-wide w3-center">EQUIPO</h2>
+         <p class="w3-opacity w3-text-cyan w3-center"><i>Creadores de esta pagina Web</i></p><br>
+      </p>
+    </div>
+
+   <div class="w3-quarter w3-margin-bottom">
+     <div class="imagen-container" id="imagen-container-1" onmouseover="mostrarGif(1)" onmouseout="ocultarGif(1)">
+       <img class="imagen-estatica" src="https://imgur.com/wx3uxFR.jpg" alt="Static Image" width="200" height="200">
+       <img class="gif-animado" src="https://imgur.com/MCUQuOB.gif" alt="Animated GIF" width="200" height="200">
+
+       <h3>Joriel Crastz</h3>
+        <p class="w3-opacity">Progamador & Diseñador</p>
+         
+     </div>
+   </div>
+
+   <div class="w3-quarter w3-margin-bottom">
+     <div class="imagen-container" id="imagen-container-2" onmouseover="mostrarGif(2)" onmouseout="ocultarGif(2)">
+       <img class="imagen-estatica" src="https://imgur.com/oXJxpZ5.jpg" alt="Static Image" width="200" height="200">
+       <img class="gif-animado" src="https://imgur.com/86xAUL5.gif" alt="Animated GIF" width="200" height="200">
+      
+       
+       <h3>Paula Rodriguez</h3>
+        <p class="w3-opacity">Diseñadora & Investigadora</p>
+        
+     </div>
+   </div>
+    
+
+   <div class="w3-quarter w3-margin-bottom">
+     <div class="imagen-container" id="imagen-container-3"onmouseover="mostrarGif(3)" onmouseout="ocultarGif(3)">
+       <img class="imagen-estatica" src="https://imgur.com/uI7vBb1.jpg" alt="Static Image" width="200" height="200">
+       <img class="gif-animado" src="https://imgur.com/6hNqDKI.gif" alt="Animated GIF" width="200" height="200">
+
+       <h3>Carmen Chirinos</h3>
+        <p class="w3-opacity">Diseñadora & Programadora</p>
+        
+     </div>
+   </div>
+    
+
+   <div class="w3-quarter w3-margin-bottom">
+     <div class="imagen-container" id="imagen-container-4" onmouseover="mostrarGif(4)" onmouseout="ocultarGif(4)">
+        <img class="imagen-estatica" src="https://imgur.com/59MAJAE.jpg" alt="Static Image" width="200" height="200">
+        <img class="gif-animado" src="https://imgur.com/gyElS07.gif" alt="Animated GIF" width="200" height="200">
+      
+       
+        <h3>Gabriela Burnham</h3>
+        <p class="w3-opacity">Progamadora & Diseñadora</p>
+        
+     </div>    
+   </div>
+  </div>
+
+  <div class="w3-cyan w3-padding-5px">
+    <marquee behavior="scroll" direction="left">Visita las redes sociales de nuestra institución @colegiolasallemargarita en Instagram</marquee>
+ </div>
+
+  <div class="w3-white" id="Contenido">
+    <div class="w3-container">
+      <div class="w3-left w3-padding-50">
+      <h2 class="w3-wide w3-text-cyan">CONTENIDO</h2> 
+
+    
+
+     <table style="width:100% ">
+       <tr>
+         <th><div class="w3-left w3-text-black">Contenido reciente</div></th>
+       </tr>
+       <tr>
+         <td>
+           <button class="w3-button w3-left-align"><a href="#Neuralink">Neuralink</a></button><br>
+           <button class="w3-button w3-left-align"><a href="#Temas">segundo tema</a></button>  
+         </td>  
+       </tr>
+     </table>
+    </div>
+
+    
+
+ </div>
+<!---algo por aqui -->
+  <div class="w3-black" id="Neuralink" style="margin-top: 20px" >
+    <div class="w3-container">
+      <div class="w3-center w3-padding-32">
+       <h2 class="w3-wide">NEURALINK</h2>
+       <p class="w3-center w3-black w3-medium w3-text-white">
+          Nostros decidimos utilizar 4 app para repartir la información del tema; si quiere acceder a ella, únicamente presiona cada uno de los íconos que aparecen debajo. 
+         <h2 class="w3-center w3-text-cyan w3-medium">!Gracias por acceder a nuestra pagina!</h2>
+       </p>
+      </div>
+
+      <div class="w3-row-padding" style="margin-bottom: 50px">
+        <div class="w3-quarter" >
+          <a href="https://prezi.com/i/rv2apv2_rgae/cultura-de-la-informatica/">
+           <img src="https://imgur.com/hOe8JHM.jpg" alt="description" style="width:90%" class="w3-hover-opacity">
+         </a>
+        </div>
+        <div class="w3-quarter" >
+          <a href="https://www.smore.com/n/5t89qk">
+           <img src="https://imgur.com/24ibqSO.jpg" alt="description" style="width:90%" class="w3-hover-opacity">
+         </a>
+        </div>
+        <div class="w3-quarter" >
+          <a href="https://www.powtoon.com/s/eKrvDYStMgN/1/m/s">
+           <img src="https://imgur.com/hwrU3uP.jpg" alt="description" style="width:90%" class="w3-hover-opacity">
+         </a>
+        </div>
+        <div class="w3-quarter" >
+          <a href="https://www.canva.com/design/DAGB2pcrOb8/56PgeTduiYN_1qbcmKgphw/view?utm_content=DAGB2pcrOb8&utm_campaign=designshare&utm_medium=link&utm_source=viewer">
+           <img src="https://imgur.com/ktkUI2F.jpg" alt="description" style="width:90%" class="w3-hover-opacity">
+         </a>
+        </div>
+        
+      </div>
+    </div>
+  </div>
+<div class="w3-white" id="Contact" style="margin: 50px">
+  <div class="w3-container"  >
+    <div class="w3-center" >
+     <h2 class="w3-wide">CONTACT</h2>
+     <p class="w3-opacity w3-text-cyan"><i>Dejanos tu comentario, si tienes problemas con la pagina web comunicate con soporte</i></p><br>
+     <p class="w3-white w3-text-black w3-left-align">
+     Lorem ipsum dolor sit amet, consectetu adipiscing elit. Donec pharetra rhoncus suscipit. Integer eget leo pretium, vulputate velit sit amet, aliquam est. Pellentesque a malesuada orci, at rhoncus enim. Suspendisse at dictum arcu. Etiam tempus varius sem, at pretium augue fringilla et. Curabitur tempus sollicitudin congue. Aliquam in malesuada eros. Nunc ullamcorper sagittis augue a ornare. Aenean faucibus finibus sollicitudin. Nullam interdum tellus mauris, et mattis libero accumsan vitae. Suspendisse et dui accumsan, lacinia leo in, aliquam felis. Aliquam tortor tellus, egestas tristique orci at, rutrum lacinia orci.
+      </p>
+    </div>
+  </div> 
+<form action="/action_page.php" target="_blank">
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Name" required name="Name"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="number" placeholder="Service" required name="Service"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="datetime-local" placeholder="Date and time" required name="date" value="2020-11-16T20:00"></p>
+<p><input class="w3-input w3-padding-16 w3-border" type="text" placeholder="Message" required name="Message"></p>
+<p><button class="w3-button w3-round w3- w3-block w3-cyan" type="submit">SEND MESSAGE</button></p>
+</form>
+</div>
+</div>
+
+  <!-- Footer. This section contains an ad for W3Schools Spaces. You can leave it to support us. -->
+  <footer class="w3-container w3-teal w3-center w3-margin-top">
+    <p>Find us on social media.</p>
+    <i class="fa fa-facebook-official w3-hover-opacity"></i>
+    <i class="fa fa-instagram w3-hover-opacity"></i>
+    <i class="fa fa-snapchat w3-hover-opacity"></i>
+    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
+    <i class="fa fa-twitter w3-hover-opacity"></i>
+    <i class="fa fa-linkedin w3-hover-opacity"></i>
+    <p class="w3-small">This website was made with W3schools Spaces. Make your own free website today!</p>
+    <a class="w3-button w3-round-xxlarge w3-small w3-white w3-margin-bottom" href="https://www.w3schools.com/spaces" target="_blank">Start now</a> <!-- End footer -->
+  </footer>
+
+  <audio id="musical" autoplay loop>
+    <source src="audio/Los Encinos - Quincas Moreira.mp3" type="audio/mpeg">
+    este app no se puede
+  </audio>  
+
+<script>
+  function myFunction() {
+   var x = document.getElementById("demo");
+   if (x.className.indexOf("w3-show") == -1) {
+     x.className += " w3-show";
+   } else { 
+     x.className = x.className.replace(" w3-show", "");
+    }
+ }
+
+  function mostrarGif(numero) {
+   document.getElementById(`imagen-container-${numero}`).querySelector(".imagen-estatica").style.display = "none";
+   document.getElementById(`imagen-container-${numero}`).querySelector(".gif-animado").style.display = "inline";
+  }
+
+  function ocultarGif(numero) {
+   document.getElementById(`imagen-container-${numero}`).querySelector(".imagen-estatica").style.display = "inline";
+   document.getElementById(`imagen-container-${numero}`).querySelector(".gif-animado").style.display = "none";
+  }
+  
+  function PlayAudio() {
+    document.getElementById("musical").play();
+  }
+</script>
+
+</body>
+</html>
